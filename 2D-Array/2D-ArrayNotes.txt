@@ -1,10 +1,21 @@
-Initialization: 
+1] Initialization: 
      //At compile time
-     int a[][] = {1,2.4,7,8,9,8};
+     int a[m][n] = {1,2.4,7,8,9,8};
      int a[3][3]  = {{1,2,4},{4,8,9}};
 
-First [] is for number of rows
-Second [] is for number of columns
+2] First [] is for number of rows(M).
+Second [] is for number of columns(N).
 
-Writting value at first [] is not complusory, but it is mandotary to give a value at column [].
+3]   Writting value at first [] is not complusory, but it is mandotary to give a value at column [].
 i.e. int a[][4] = {};
+
+4]   Implementation of 2D array is by two methods:
+     1) Row Major :  1 2 4 7 8 9 8
+     2) Column Major : 1 4 2 8 4 9
+     
+5]   General formula for Getting the address of a particular number in Row Major:
+
+a[i][j] =     Base address + ((i*n)+j) * size;
+
+6]   General formula for Getting the address of a particular number in columns Major:
+     
