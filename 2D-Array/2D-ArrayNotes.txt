@@ -1,4 +1,10 @@
 Initialization: 
      //At compile time
-     int a[][] = {1,2.4,7,8,9,8}
-     int a[3][3]  = {{1,2,4},{4,8,9}}
+     int a[][] = {1,2.4,7,8,9,8};
+     int a[3][3]  = {{1,2,4},{4,8,9}};
+
+First [] is for number of rows
+Second [] is for number of columns
+
+Writting value at first [] is not complusory, but it is mandotary to give a value at column [].
+i.e. int a[][4] = {};
