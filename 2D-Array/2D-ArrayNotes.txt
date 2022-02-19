@@ -15,7 +15,12 @@ i.e. int a[][4] = {};
      
 5]   General formula for Getting the address of a particular number in Row Major:
 
-a[i][j] =     Base address + ((i*n)+j) * size;
+     a[i][j] = Base address + ((i*n)+j) * size;
 
 6]   General formula for Getting the address of a particular number in columns Major:
-     
+     a[i][j] = Base address + ((j*m)+i) * size;
+
+7]   In both above formulaes if 'i' is staring form 1 then:
+          do changes in (i-1) and (j-1) in both formulaes.
+          
+8]   s
