@@ -3,11 +3,11 @@
      int a[m][n] = {1,2.4,7,8,9,8};
      int a[3][3]  = {{1,2,4},{4,8,9}};
 
-2] First [] is for number of rows(M).
-Second [] is for number of columns(N).
+2]   First [] is for number of rows(M).
+     Second [] is for number of columns(N).
 
 3]   Writting value at first [] is not complusory, but it is mandotary to give a value at column [].
-i.e. int a[][4] = {};
+     i.e. int a[][4] = {};
 
 4]   Implementation of 2D array is by two methods:
      1) Row Major :  1 2 4 7 8 9 8
@@ -23,4 +23,27 @@ i.e. int a[][4] = {};
 7]   In both above formulaes if 'i' is staring form 1 then:
           do changes in (i-1) and (j-1) in both formulaes.
           
-8]   s
+8]   2D arrays is an array of arrays
+
+9]   Pointers to 2D array:
+     
+     int a[][] = {1,2,3,4,5,6,7,8,9};
+     int *p;
+     
+10]     p = &a[0][0]; OR p = a[0];
+     
+ 11]    Accesing values in 2D arras:
+     a[i][j] =
+     *(*(a+i)+j) = 
+     *(a[i] + j) =
+     
+     
+12]     *(a+1)    =   a[1];
+     *(a+1)+2  =   6 // as at a[1] 3rd element value is 6
+     
+     
+13]     a[1] + 1  =    100 + 4   = 104 // is base address of a[1] is 100
+                              but
+     &a[1] + 1 =    108  +    4    = 122     // as &a[1] is the full address of 1D array i.e. starting from 100 to 108 with 3 elements in it. so adding 1 to it will return 112.
+     
+     
